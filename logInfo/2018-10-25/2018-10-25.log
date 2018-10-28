@@ -1,0 +1,765 @@
+2018-10-25 09:54:13 -Starting BookApplication on FW757PBH1J4RION with PID 11048 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 09:54:13 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 09:54:13 -The following profiles are active: dev
+2018-10-25 09:54:14 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2052d161: startup date [Thu Oct 25 09:54:14 CST 2018]; root of context hierarchy
+2018-10-25 09:54:16 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 09:54:16 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b42cfec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 09:54:19 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 09:54:19 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:54:19 -Starting service [Tomcat]
+2018-10-25 09:54:19 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 09:54:19 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 09:54:19 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 09:54:19 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 09:54:20 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 09:54:20 -Initializing Spring embedded WebApplicationContext
+2018-10-25 09:54:20 -Root WebApplicationContext: initialization completed in 6386 ms
+2018-10-25 09:54:20 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 09:54:20 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 09:54:20 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 09:54:20 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 09:54:20 -Filter xssFilter was not registered (disabled)
+2018-10-25 09:54:20 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 09:54:20 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 09:54:20 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 09:54:21 -{dataSource-1} inited
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 09:54:25 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 09:54:25 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 09:54:25 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 09:54:25 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 09:54:25 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 09:54:25 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 09:54:25 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 09:54:25 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:54:25 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2052d161: startup date [Thu Oct 25 09:54:14 CST 2018]; root of context hierarchy
+2018-10-25 09:54:25 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:54:25 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:54:25 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 09:54:26 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 09:54:26 -LiveReload server is running on port 35729
+2018-10-25 09:54:26 -Registering beans for JMX exposure on startup
+2018-10-25 09:54:26 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 09:54:26 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 09:54:26 -Starting beans in phase 2147483647
+2018-10-25 09:54:26 -Context refreshed
+2018-10-25 09:54:26 -Found 1 custom documentation plugin(s)
+2018-10-25 09:54:26 -Scanning for api listing references
+2018-10-25 09:54:27 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:54:27 -Using a shared selector for servlet write/read
+2018-10-25 09:54:27 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 09:54:27 -Started BookApplication in 15.683 seconds (JVM running for 20.003)
+2018-10-25 09:55:15 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2052d161: startup date [Thu Oct 25 09:54:14 CST 2018]; root of context hierarchy
+2018-10-25 09:55:15 -Stopping beans in phase 2147483647
+2018-10-25 09:55:15 -Unregistering JMX-exposed beans on shutdown
+2018-10-25 09:55:15 -Unregistering JMX-exposed beans
+2018-10-25 09:55:15 -{dataSource-1} closed
+2018-10-25 09:55:15 -Starting BookApplication on FW757PBH1J4RION with PID 11048 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 09:55:15 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 09:55:15 -The following profiles are active: dev
+2018-10-25 09:55:15 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@efedc74: startup date [Thu Oct 25 09:55:15 CST 2018]; root of context hierarchy
+2018-10-25 09:55:16 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 09:55:16 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b42cfec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 09:55:16 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 09:55:16 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:55:16 -Starting service [Tomcat]
+2018-10-25 09:55:16 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 09:55:16 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 09:55:16 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 09:55:16 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 09:55:16 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 09:55:16 -Initializing Spring embedded WebApplicationContext
+2018-10-25 09:55:16 -Root WebApplicationContext: initialization completed in 1058 ms
+2018-10-25 09:55:16 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 09:55:16 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 09:55:16 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 09:55:16 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 09:55:16 -Filter xssFilter was not registered (disabled)
+2018-10-25 09:55:16 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 09:55:16 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 09:55:16 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 09:55:16 -{dataSource-2} inited
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 09:55:17 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 09:55:17 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 09:55:17 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 09:55:17 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 09:55:17 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 09:55:17 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 09:55:17 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 09:55:17 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:55:17 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@efedc74: startup date [Thu Oct 25 09:55:15 CST 2018]; root of context hierarchy
+2018-10-25 09:55:17 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:55:17 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:55:17 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 09:55:17 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 09:55:17 -LiveReload server is running on port 35729
+2018-10-25 09:55:17 -Registering beans for JMX exposure on startup
+2018-10-25 09:55:17 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 09:55:17 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 09:55:17 -Starting beans in phase 2147483647
+2018-10-25 09:55:17 -Context refreshed
+2018-10-25 09:55:17 -Found 1 custom documentation plugin(s)
+2018-10-25 09:55:17 -Scanning for api listing references
+2018-10-25 09:55:18 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:55:18 -Using a shared selector for servlet write/read
+2018-10-25 09:55:18 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 09:55:18 -Started BookApplication in 2.511 seconds (JVM running for 70.801)
+2018-10-25 09:55:18 -Condition evaluation unchanged
+2018-10-25 09:56:44 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-25 09:56:44 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-25 09:56:45 -FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-10-25 09:56:45 -请求地址 : http://localhost:8082/book/bookregister/getBookerByBookPhone
+2018-10-25 09:56:45 -HTTP METHOD : POST
+2018-10-25 09:56:45 -CLASS_METHOD : cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone
+2018-10-25 09:56:45 -参数 : [BookRegisterEntity{bookId='null', bookName='null', bookAge='null', bookPhone='17071892627', bookStartTime='null', bookDep='null', bookMajor='null', bookClass='null', bookEndTime='null', bookCity='null', bookWorkUnit='null', bookWorkTitle='null', bookEmail='null', bookWeixin='null', bookSex='null', bookRemark01='null', bookRemark02='null', bookRemark03='null', bookRemark04='null', bookRemark05='null', bookRemark06='null', bookRemark07='null', bookRemark08='null', bookRemark09='null', bookRemark10='null'}]
+2018-10-25 09:56:45 -==>  Preparing: SELECT BOOK_ID AS bookId,book_name AS bookName,book_age AS bookAge,book_phone AS bookPhone,book_start_time AS bookStartTime,book_dep AS bookDep,book_major AS bookMajor,book_class AS bookClass,book_end_time AS bookEndTime,book_city AS bookCity,book_work_unit AS bookWorkUnit,book_work_title AS bookWorkTitle,book_email AS bookEmail,book_weixin AS bookWeixin,book_sex AS bookSex,book_remark01 AS bookRemark01,book_remark02 AS bookRemark02,book_remark03 AS bookRemark03,book_remark04 AS bookRemark04,book_remark05 AS bookRemark05,book_remark06 AS bookRemark06,book_remark07 AS bookRemark07,book_remark08 AS bookRemark08,book_remark09 AS bookRemark09,book_remark10 AS bookRemark10 FROM book_register WHERE book_phone=? 
+2018-10-25 09:56:45 -==> Parameters: 17071892627(String)
+2018-10-25 09:56:45 -<==      Total: 0
+2018-10-25 09:56:45 -耗时 : 410
+2018-10-25 09:56:45 -返回值 : cn.yiyang.common.utils.ResultBean@37c10acd
+2018-10-25 09:56:51 -请求地址 : http://localhost:8082/book/bookregister/getMsgCodeByBookPhone
+2018-10-25 09:56:51 -HTTP METHOD : POST
+2018-10-25 09:56:51 -CLASS_METHOD : cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone
+2018-10-25 09:56:51 -参数 : [17071892627]
+2018-10-25 09:56:52 -Starting without optional epoll library
+2018-10-25 09:56:52 -Starting without optional kqueue library
+2018-10-25 09:56:52 -耗时 : 1395
+2018-10-25 09:56:52 -返回值 : cn.yiyang.common.utils.ResultBean@1ccc8ae
+2018-10-25 09:57:40 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@efedc74: startup date [Thu Oct 25 09:55:15 CST 2018]; root of context hierarchy
+2018-10-25 09:57:40 -Stopping beans in phase 2147483647
+2018-10-25 09:57:40 -Unregistering JMX-exposed beans on shutdown
+2018-10-25 09:57:40 -Unregistering JMX-exposed beans
+2018-10-25 09:57:41 -{dataSource-2} closed
+2018-10-25 09:57:42 -Starting BookApplication on FW757PBH1J4RION with PID 11048 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 09:57:42 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 09:57:42 -The following profiles are active: dev
+2018-10-25 09:57:42 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f735777: startup date [Thu Oct 25 09:57:42 CST 2018]; root of context hierarchy
+2018-10-25 09:57:42 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 09:57:43 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b42cfec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 09:57:43 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 09:57:43 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:57:43 -Starting service [Tomcat]
+2018-10-25 09:57:43 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 09:57:43 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 09:57:43 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 09:57:43 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 09:57:43 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 09:57:43 -Initializing Spring embedded WebApplicationContext
+2018-10-25 09:57:43 -Root WebApplicationContext: initialization completed in 1114 ms
+2018-10-25 09:57:43 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 09:57:43 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 09:57:43 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 09:57:43 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 09:57:43 -Filter xssFilter was not registered (disabled)
+2018-10-25 09:57:43 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 09:57:43 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 09:57:43 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 09:57:43 -{dataSource-3} inited
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 09:57:43 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 09:57:43 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 09:57:43 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 09:57:43 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 09:57:43 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 09:57:43 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 09:57:43 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 09:57:44 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:57:44 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f735777: startup date [Thu Oct 25 09:57:42 CST 2018]; root of context hierarchy
+2018-10-25 09:57:44 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:57:44 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:57:44 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 09:57:44 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 09:57:44 -LiveReload server is running on port 35729
+2018-10-25 09:57:44 -Registering beans for JMX exposure on startup
+2018-10-25 09:57:44 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 09:57:44 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 09:57:44 -Starting beans in phase 2147483647
+2018-10-25 09:57:44 -Context refreshed
+2018-10-25 09:57:44 -Found 1 custom documentation plugin(s)
+2018-10-25 09:57:44 -Scanning for api listing references
+2018-10-25 09:57:44 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:57:44 -Using a shared selector for servlet write/read
+2018-10-25 09:57:44 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 09:57:44 -Started BookApplication in 2.559 seconds (JVM running for 217.516)
+2018-10-25 09:57:44 -Condition evaluation unchanged
+2018-10-25 09:58:10 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f735777: startup date [Thu Oct 25 09:57:42 CST 2018]; root of context hierarchy
+2018-10-25 09:58:10 -Stopping beans in phase 2147483647
+2018-10-25 09:58:10 -Unregistering JMX-exposed beans on shutdown
+2018-10-25 09:58:10 -Unregistering JMX-exposed beans
+2018-10-25 09:58:10 -{dataSource-3} closed
+2018-10-25 09:58:10 -Starting BookApplication on FW757PBH1J4RION with PID 11048 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 09:58:10 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 09:58:10 -The following profiles are active: dev
+2018-10-25 09:58:10 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d86906c: startup date [Thu Oct 25 09:58:10 CST 2018]; root of context hierarchy
+2018-10-25 09:58:11 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 09:58:11 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b42cfec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 09:58:11 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 09:58:11 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:58:11 -Starting service [Tomcat]
+2018-10-25 09:58:11 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 09:58:11 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 09:58:11 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 09:58:11 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 09:58:11 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 09:58:11 -Initializing Spring embedded WebApplicationContext
+2018-10-25 09:58:11 -Root WebApplicationContext: initialization completed in 1360 ms
+2018-10-25 09:58:12 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 09:58:12 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 09:58:12 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 09:58:12 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 09:58:12 -Filter xssFilter was not registered (disabled)
+2018-10-25 09:58:12 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 09:58:12 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 09:58:12 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 09:58:12 -{dataSource-4} inited
+2018-10-25 09:58:12 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 09:58:12 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 09:58:12 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 09:58:12 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 09:58:12 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 09:58:12 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 09:58:12 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:58:13 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d86906c: startup date [Thu Oct 25 09:58:10 CST 2018]; root of context hierarchy
+2018-10-25 09:58:13 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:58:13 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:58:13 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 09:58:13 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 09:58:13 -LiveReload server is running on port 35729
+2018-10-25 09:58:13 -Registering beans for JMX exposure on startup
+2018-10-25 09:58:13 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 09:58:13 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 09:58:13 -Starting beans in phase 2147483647
+2018-10-25 09:58:13 -Context refreshed
+2018-10-25 09:58:13 -Found 1 custom documentation plugin(s)
+2018-10-25 09:58:13 -Scanning for api listing references
+2018-10-25 09:58:13 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:58:13 -Using a shared selector for servlet write/read
+2018-10-25 09:58:13 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 09:58:13 -Started BookApplication in 3.348 seconds (JVM running for 246.54)
+2018-10-25 09:58:13 -Condition evaluation unchanged
+2018-10-25 09:58:24 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d86906c: startup date [Thu Oct 25 09:58:10 CST 2018]; root of context hierarchy
+2018-10-25 09:58:24 -Stopping beans in phase 2147483647
+2018-10-25 09:58:24 -Unregistering JMX-exposed beans on shutdown
+2018-10-25 09:58:24 -Unregistering JMX-exposed beans
+2018-10-25 09:58:24 -{dataSource-4} closed
+2018-10-25 09:58:25 -Starting BookApplication on FW757PBH1J4RION with PID 11048 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 09:58:25 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 09:58:25 -The following profiles are active: dev
+2018-10-25 09:58:25 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1792d704: startup date [Thu Oct 25 09:58:25 CST 2018]; root of context hierarchy
+2018-10-25 09:58:25 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 09:58:26 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b42cfec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 09:58:26 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 09:58:26 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:58:26 -Starting service [Tomcat]
+2018-10-25 09:58:26 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 09:58:26 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 09:58:26 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 09:58:26 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 09:58:26 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 09:58:26 -Initializing Spring embedded WebApplicationContext
+2018-10-25 09:58:26 -Root WebApplicationContext: initialization completed in 1364 ms
+2018-10-25 09:58:26 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 09:58:26 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 09:58:26 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 09:58:26 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 09:58:26 -Filter xssFilter was not registered (disabled)
+2018-10-25 09:58:26 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 09:58:26 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 09:58:26 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 09:58:26 -{dataSource-5} inited
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 09:58:27 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 09:58:27 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 09:58:27 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 09:58:27 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 09:58:27 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 09:58:27 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 09:58:27 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 09:58:27 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:58:27 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1792d704: startup date [Thu Oct 25 09:58:25 CST 2018]; root of context hierarchy
+2018-10-25 09:58:27 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:58:27 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:58:27 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 09:58:28 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 09:58:28 -LiveReload server is running on port 35729
+2018-10-25 09:58:28 -Registering beans for JMX exposure on startup
+2018-10-25 09:58:28 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 09:58:28 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 09:58:28 -Starting beans in phase 2147483647
+2018-10-25 09:58:28 -Context refreshed
+2018-10-25 09:58:28 -Found 1 custom documentation plugin(s)
+2018-10-25 09:58:28 -Scanning for api listing references
+2018-10-25 09:58:28 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:58:28 -Using a shared selector for servlet write/read
+2018-10-25 09:58:28 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 09:58:28 -Started BookApplication in 3.567 seconds (JVM running for 261.286)
+2018-10-25 09:58:28 -Condition evaluation unchanged
+2018-10-25 09:58:57 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1792d704: startup date [Thu Oct 25 09:58:25 CST 2018]; root of context hierarchy
+2018-10-25 09:58:57 -Stopping beans in phase 2147483647
+2018-10-25 09:58:57 -Unregistering JMX-exposed beans on shutdown
+2018-10-25 09:58:57 -Unregistering JMX-exposed beans
+2018-10-25 09:58:57 -{dataSource-5} closed
+2018-10-25 09:58:57 -Starting BookApplication on FW757PBH1J4RION with PID 11048 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 09:58:57 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 09:58:57 -The following profiles are active: dev
+2018-10-25 09:58:57 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bd79cd0: startup date [Thu Oct 25 09:58:57 CST 2018]; root of context hierarchy
+2018-10-25 09:58:58 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 09:58:59 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b42cfec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 09:58:59 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 09:58:59 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:58:59 -Starting service [Tomcat]
+2018-10-25 09:58:59 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 09:58:59 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 09:58:59 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 09:58:59 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 09:58:59 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 09:58:59 -Initializing Spring embedded WebApplicationContext
+2018-10-25 09:58:59 -Root WebApplicationContext: initialization completed in 1407 ms
+2018-10-25 09:58:59 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 09:58:59 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 09:58:59 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 09:58:59 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 09:58:59 -Filter xssFilter was not registered (disabled)
+2018-10-25 09:58:59 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 09:58:59 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 09:58:59 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 09:58:59 -{dataSource-6} inited
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 09:58:59 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 09:58:59 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 09:58:59 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 09:58:59 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 09:58:59 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 09:58:59 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 09:58:59 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 09:58:59 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:59:00 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bd79cd0: startup date [Thu Oct 25 09:58:57 CST 2018]; root of context hierarchy
+2018-10-25 09:59:00 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:59:00 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:59:00 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 09:59:00 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 09:59:00 -LiveReload server is running on port 35729
+2018-10-25 09:59:00 -Registering beans for JMX exposure on startup
+2018-10-25 09:59:00 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 09:59:00 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 09:59:00 -Starting beans in phase 2147483647
+2018-10-25 09:59:00 -Context refreshed
+2018-10-25 09:59:00 -Found 1 custom documentation plugin(s)
+2018-10-25 09:59:00 -Scanning for api listing references
+2018-10-25 09:59:00 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:59:00 -Using a shared selector for servlet write/read
+2018-10-25 09:59:00 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 09:59:00 -Started BookApplication in 3.167 seconds (JVM running for 293.649)
+2018-10-25 09:59:00 -Condition evaluation unchanged
+2018-10-25 09:59:37 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bd79cd0: startup date [Thu Oct 25 09:58:57 CST 2018]; root of context hierarchy
+2018-10-25 09:59:37 -Stopping beans in phase 2147483647
+2018-10-25 09:59:37 -Unregistering JMX-exposed beans on shutdown
+2018-10-25 09:59:37 -Unregistering JMX-exposed beans
+2018-10-25 09:59:37 -{dataSource-6} closed
+2018-10-25 09:59:38 -Starting BookApplication on FW757PBH1J4RION with PID 11048 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 09:59:38 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 09:59:38 -The following profiles are active: dev
+2018-10-25 09:59:38 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b6c9aea: startup date [Thu Oct 25 09:59:38 CST 2018]; root of context hierarchy
+2018-10-25 09:59:38 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 09:59:38 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b42cfec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 09:59:39 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 09:59:39 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:59:39 -Starting service [Tomcat]
+2018-10-25 09:59:39 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 09:59:39 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 09:59:39 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 09:59:39 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 09:59:39 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 09:59:39 -Initializing Spring embedded WebApplicationContext
+2018-10-25 09:59:39 -Root WebApplicationContext: initialization completed in 1064 ms
+2018-10-25 09:59:39 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 09:59:39 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 09:59:39 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 09:59:39 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 09:59:39 -Filter xssFilter was not registered (disabled)
+2018-10-25 09:59:39 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 09:59:39 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 09:59:39 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 09:59:39 -{dataSource-7} inited
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 09:59:39 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 09:59:39 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 09:59:39 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 09:59:39 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 09:59:39 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 09:59:39 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 09:59:39 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 09:59:39 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:59:40 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b6c9aea: startup date [Thu Oct 25 09:59:38 CST 2018]; root of context hierarchy
+2018-10-25 09:59:40 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:59:40 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 09:59:40 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 09:59:40 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 09:59:40 -LiveReload server is running on port 35729
+2018-10-25 09:59:40 -Registering beans for JMX exposure on startup
+2018-10-25 09:59:40 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 09:59:40 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 09:59:40 -Starting beans in phase 2147483647
+2018-10-25 09:59:40 -Context refreshed
+2018-10-25 09:59:40 -Found 1 custom documentation plugin(s)
+2018-10-25 09:59:40 -Scanning for api listing references
+2018-10-25 09:59:40 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 09:59:40 -Using a shared selector for servlet write/read
+2018-10-25 09:59:40 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 09:59:40 -Started BookApplication in 2.489 seconds (JVM running for 333.311)
+2018-10-25 09:59:40 -Condition evaluation unchanged
+2018-10-25 09:59:49 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-25 09:59:49 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-25 09:59:49 -FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-10-25 09:59:49 -请求地址 : http://localhost:8082/book/bookregister/getBookerByBookPhone
+2018-10-25 09:59:49 -HTTP METHOD : POST
+2018-10-25 09:59:49 -CLASS_METHOD : cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone
+2018-10-25 09:59:49 -参数 : [BookRegisterEntity{bookId='null', bookName='null', bookAge='null', bookPhone='17071892627', bookStartTime='null', bookDep='null', bookMajor='null', bookClass='null', bookEndTime='null', bookCity='null', bookWorkUnit='null', bookWorkTitle='null', bookEmail='null', bookWeixin='null', bookSex='null', bookRemark01='null', bookRemark02='null', bookRemark03='null', bookRemark04='null', bookRemark05='null', bookRemark06='null', bookRemark07='null', bookRemark08='null', bookRemark09='null', bookRemark10='null'}]
+2018-10-25 09:59:49 -==>  Preparing: SELECT BOOK_ID AS bookId,book_name AS bookName,book_age AS bookAge,book_phone AS bookPhone,book_start_time AS bookStartTime,book_dep AS bookDep,book_major AS bookMajor,book_class AS bookClass,book_end_time AS bookEndTime,book_city AS bookCity,book_work_unit AS bookWorkUnit,book_work_title AS bookWorkTitle,book_email AS bookEmail,book_weixin AS bookWeixin,book_sex AS bookSex,book_remark01 AS bookRemark01,book_remark02 AS bookRemark02,book_remark03 AS bookRemark03,book_remark04 AS bookRemark04,book_remark05 AS bookRemark05,book_remark06 AS bookRemark06,book_remark07 AS bookRemark07,book_remark08 AS bookRemark08,book_remark09 AS bookRemark09,book_remark10 AS bookRemark10 FROM book_register WHERE book_phone=? 
+2018-10-25 09:59:49 -==> Parameters: 17071892627(String)
+2018-10-25 09:59:49 -<==      Total: 0
+2018-10-25 09:59:49 -耗时 : 49
+2018-10-25 09:59:49 -返回值 : cn.yiyang.common.utils.ResultBean@28d0f065
+2018-10-25 09:59:55 -请求地址 : http://localhost:8082/book/bookregister/getMsgCodeByBookPhone
+2018-10-25 09:59:55 -HTTP METHOD : POST
+2018-10-25 09:59:55 -CLASS_METHOD : cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone
+2018-10-25 09:59:55 -参数 : [17071892627]
+2018-10-25 09:59:55 -耗时 : 201
+2018-10-25 09:59:55 -返回值 : cn.yiyang.common.utils.ResultBean@59167102
+2018-10-25 10:00:12 -请求地址 : http://localhost:8082/book/bookregister/addBooker
+2018-10-25 10:00:12 -HTTP METHOD : POST
+2018-10-25 10:00:12 -CLASS_METHOD : cn.yiyang.book.controller.BookRegisterController.addBooker
+2018-10-25 10:00:12 -参数 : [{bookCity=北京市,北京市, bookStartTime=1949-01, bookEndTime=1967-01, bookAge=26~30, bookSex=男, bookMsgCode=8534, bookName=王一扬, bookPhone=17071892627, bookDep=物理系, bookMajor=电子信息工程, bookClass=601, bookWorkUnit=步长制药, bookWorkTitle=大数据工程师, bookEmail=1023097289@qq.com, bookWeixin=1023097289}]
+2018-10-25 10:00:12 -==>  Preparing: INSERT INTO book_register ( BOOK_ID, book_name, book_age, book_phone, book_start_time, book_dep, book_major, book_class, book_end_time, book_city, book_work_unit, book_work_title, book_email, book_weixin, book_sex ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-10-25 10:00:12 -==> Parameters: 9A7A22576866461BB6D06CD8DD4ABB59(String), 王一扬(String), 26~30(String), 17071892627(String), 1949-01(String), 物理系(String), 电子信息工程(String), 601(String), 1967-01(String), 北京市,北京市(String), 步长制药(String), 大数据工程师(String), 1023097289@qq.com(String), 1023097289(String), 男(String)
+2018-10-25 10:00:12 -<==    Updates: 1
+2018-10-25 10:00:13 -耗时 : 91
+2018-10-25 10:00:13 -返回值 : cn.yiyang.common.utils.ResultBean@652d1a34
+2018-10-25 10:00:56 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b6c9aea: startup date [Thu Oct 25 09:59:38 CST 2018]; root of context hierarchy
+2018-10-25 10:00:56 -Stopping beans in phase 2147483647
+2018-10-25 10:00:56 -Unregistering JMX-exposed beans on shutdown
+2018-10-25 10:00:56 -Unregistering JMX-exposed beans
+2018-10-25 10:00:58 -{dataSource-7} closed
+2018-10-25 10:00:58 -Starting BookApplication on FW757PBH1J4RION with PID 11048 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 10:00:58 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 10:00:58 -The following profiles are active: dev
+2018-10-25 10:00:58 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17d90ace: startup date [Thu Oct 25 10:00:58 CST 2018]; root of context hierarchy
+2018-10-25 10:00:59 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 10:00:59 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b42cfec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 10:00:59 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 10:00:59 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 10:00:59 -Starting service [Tomcat]
+2018-10-25 10:00:59 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 10:00:59 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 10:00:59 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 10:00:59 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 10:00:59 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 10:00:59 -Initializing Spring embedded WebApplicationContext
+2018-10-25 10:00:59 -Root WebApplicationContext: initialization completed in 1046 ms
+2018-10-25 10:00:59 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 10:00:59 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 10:00:59 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 10:00:59 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 10:00:59 -Filter xssFilter was not registered (disabled)
+2018-10-25 10:00:59 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 10:00:59 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 10:00:59 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 10:00:59 -{dataSource-8} inited
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 10:01:00 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 10:01:00 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 10:01:00 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 10:01:00 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 10:01:00 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 10:01:00 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 10:01:00 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 10:01:00 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 10:01:00 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17d90ace: startup date [Thu Oct 25 10:00:58 CST 2018]; root of context hierarchy
+2018-10-25 10:01:00 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 10:01:00 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 10:01:00 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 10:01:00 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 10:01:00 -LiveReload server is running on port 35729
+2018-10-25 10:01:00 -Registering beans for JMX exposure on startup
+2018-10-25 10:01:00 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 10:01:00 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 10:01:00 -Starting beans in phase 2147483647
+2018-10-25 10:01:00 -Context refreshed
+2018-10-25 10:01:00 -Found 1 custom documentation plugin(s)
+2018-10-25 10:01:00 -Scanning for api listing references
+2018-10-25 10:01:00 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 10:01:00 -Using a shared selector for servlet write/read
+2018-10-25 10:01:00 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 10:01:00 -Started BookApplication in 2.513 seconds (JVM running for 413.644)
+2018-10-25 10:01:00 -Condition evaluation unchanged
+2018-10-25 14:14:55 -Starting BookApplication on FW757PBH1J4RION with PID 49512 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 14:14:55 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 14:14:55 -The following profiles are active: dev
+2018-10-25 14:14:55 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@cba4b3e: startup date [Thu Oct 25 14:14:55 CST 2018]; root of context hierarchy
+2018-10-25 14:14:56 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 14:14:57 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f5954f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 14:14:57 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 14:14:57 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 14:14:57 -Starting service [Tomcat]
+2018-10-25 14:14:57 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 14:14:57 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 14:14:57 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 14:14:57 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 14:14:58 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 14:14:58 -Initializing Spring embedded WebApplicationContext
+2018-10-25 14:14:58 -Root WebApplicationContext: initialization completed in 3509 ms
+2018-10-25 14:14:59 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 14:14:59 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 14:14:59 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 14:14:59 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 14:14:59 -Filter xssFilter was not registered (disabled)
+2018-10-25 14:14:59 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 14:14:59 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 14:14:59 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 14:14:59 -{dataSource-1} inited
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 14:15:00 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 14:15:00 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 14:15:00 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 14:15:00 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 14:15:00 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 14:15:00 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 14:15:00 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 14:15:00 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:15:00 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@cba4b3e: startup date [Thu Oct 25 14:14:55 CST 2018]; root of context hierarchy
+2018-10-25 14:15:00 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:15:00 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:15:00 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 14:15:01 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 14:15:01 -LiveReload server is running on port 35729
+2018-10-25 14:15:01 -Registering beans for JMX exposure on startup
+2018-10-25 14:15:01 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 14:15:01 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 14:15:01 -Starting beans in phase 2147483647
+2018-10-25 14:15:01 -Context refreshed
+2018-10-25 14:15:01 -Found 1 custom documentation plugin(s)
+2018-10-25 14:15:01 -Scanning for api listing references
+2018-10-25 14:15:02 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 14:15:02 -Using a shared selector for servlet write/read
+2018-10-25 14:15:02 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 14:15:02 -Started BookApplication in 7.28 seconds (JVM running for 8.346)
+2018-10-25 14:16:20 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@cba4b3e: startup date [Thu Oct 25 14:14:55 CST 2018]; root of context hierarchy
+2018-10-25 14:16:20 -Stopping beans in phase 2147483647
+2018-10-25 14:16:20 -Unregistering JMX-exposed beans on shutdown
+2018-10-25 14:16:20 -Unregistering JMX-exposed beans
+2018-10-25 14:16:20 -{dataSource-1} closed
+2018-10-25 14:16:21 -Starting BookApplication on FW757PBH1J4RION with PID 49512 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 14:16:21 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 14:16:21 -The following profiles are active: dev
+2018-10-25 14:16:21 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66cb749b: startup date [Thu Oct 25 14:16:21 CST 2018]; root of context hierarchy
+2018-10-25 14:16:22 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 14:16:22 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f5954f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 14:16:22 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 14:16:22 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 14:16:22 -Starting service [Tomcat]
+2018-10-25 14:16:22 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 14:16:22 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 14:16:22 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 14:16:22 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 14:16:22 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 14:16:22 -Initializing Spring embedded WebApplicationContext
+2018-10-25 14:16:22 -Root WebApplicationContext: initialization completed in 1110 ms
+2018-10-25 14:16:22 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 14:16:22 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 14:16:22 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 14:16:22 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 14:16:22 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 14:16:22 -{dataSource-2} inited
+2018-10-25 14:16:22 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:16:22 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66cb749b: startup date [Thu Oct 25 14:16:21 CST 2018]; root of context hierarchy
+2018-10-25 14:16:22 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 14:16:22 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 14:16:22 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:16:22 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:16:23 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 14:16:23 -LiveReload server is running on port 35729
+2018-10-25 14:16:23 -Registering beans for JMX exposure on startup
+2018-10-25 14:16:23 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 14:16:23 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 14:16:23 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 14:16:23 -Using a shared selector for servlet write/read
+2018-10-25 14:16:23 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 14:16:23 -Started BookApplication in 1.817 seconds (JVM running for 89.438)
+2018-10-25 14:16:23 -Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 2 matched 0 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) matched (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DevToolsDataSourceAutoConfiguration matched:
+      - DevTools DataSource Condition found auto-configured DataSource (DevToolsDataSourceAutoConfiguration.DevToolsDataSourceCondition)
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   RedisAutoConfiguration#redisTemplate matched:
+      - @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+
+Negative matches:
+-----------------
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2018-10-25 14:23:14 -Starting BookApplication on FW757PBH1J4RION with PID 33444 (started by Administrator in C:\Users\Administrator\Desktop\work\三峡大学同学录信息登记\bookJar)
+2018-10-25 14:23:14 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-25 14:23:14 -The following profiles are active: dev
+2018-10-25 14:23:15 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2284ded2: startup date [Thu Oct 25 14:23:15 CST 2018]; root of context hierarchy
+2018-10-25 14:23:16 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-25 14:23:16 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c78bcb6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-25 14:23:17 -Tomcat initialized with port(s): 8082 (http)
+2018-10-25 14:23:17 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-25 14:23:17 -Starting service [Tomcat]
+2018-10-25 14:23:17 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-25 14:23:17 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-25 14:23:17 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-25 14:23:17 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-25 14:23:18 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-25 14:23:18 -Initializing Spring embedded WebApplicationContext
+2018-10-25 14:23:18 -Root WebApplicationContext: initialization completed in 3430 ms
+2018-10-25 14:23:18 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-25 14:23:18 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-25 14:23:18 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-25 14:23:18 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-25 14:23:18 -Filter xssFilter was not registered (disabled)
+2018-10-25 14:23:18 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-25 14:23:18 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-25 14:23:18 -Servlet dispatcherServlet mapped to [/]
+2018-10-25 14:23:19 -{dataSource-1} inited
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 14:23:19 -Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+2018-10-25 14:23:19 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-25 14:23:19 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-25 14:23:19 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-25 14:23:19 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-25 14:23:19 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-25 14:23:19 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-25 14:23:20 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:23:20 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2284ded2: startup date [Thu Oct 25 14:23:15 CST 2018]; root of context hierarchy
+2018-10-25 14:23:20 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:23:20 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-25 14:23:20 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-25 14:23:20 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-25 14:23:21 -LiveReload server is running on port 35729
+2018-10-25 14:23:21 -Registering beans for JMX exposure on startup
+2018-10-25 14:23:21 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-25 14:23:21 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-25 14:23:21 -Starting beans in phase 2147483647
+2018-10-25 14:23:21 -Context refreshed
+2018-10-25 14:23:21 -Found 1 custom documentation plugin(s)
+2018-10-25 14:23:21 -Scanning for api listing references
+2018-10-25 14:23:21 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-25 14:23:21 -Using a shared selector for servlet write/read
+2018-10-25 14:23:21 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-25 14:23:21 -Started BookApplication in 7.291 seconds (JVM running for 8.104)

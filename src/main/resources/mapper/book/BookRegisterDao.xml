@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.yiyang.book.dao.BookRegisterDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="cn.yiyang.book.entity.BookRegisterEntity" id="bookRegisterMap">
+        <result property="bookId" column="book_id"/>
+        <result property="bookName" column="book_name"/>
+        <result property="bookAge" column="book_age"/>
+        <result property="bookPhone" column="book_phone"/>
+        <result property="bookStartTime" column="book_start_time"/>
+        <result property="bookDep" column="book_dep"/>
+        <result property="bookMajor" column="book_major"/>
+        <result property="bookClass" column="book_class"/>
+        <result property="bookEndTime" column="book_end_time"/>
+        <result property="bookCity" column="book_city"/>
+        <result property="bookWorkUnit" column="book_work_unit"/>
+        <result property="bookWorkTitle" column="book_work_title"/>
+        <result property="bookEmail" column="book_email"/>
+        <result property="bookWeixin" column="book_weixin"/>
+        <result property="bookSex" column="book_sex"/>
+        <result property="bookRemark01" column="book_remark01"/>
+        <result property="bookRemark02" column="book_remark02"/>
+        <result property="bookRemark03" column="book_remark03"/>
+        <result property="bookRemark04" column="book_remark04"/>
+        <result property="bookRemark05" column="book_remark05"/>
+        <result property="bookRemark06" column="book_remark06"/>
+        <result property="bookRemark07" column="book_remark07"/>
+        <result property="bookRemark08" column="book_remark08"/>
+        <result property="bookRemark09" column="book_remark09"/>
+        <result property="bookRemark10" column="book_remark10"/>
+    </resultMap>
+
+
+</mapper>
