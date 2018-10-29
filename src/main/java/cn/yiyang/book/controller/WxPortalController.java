@@ -1,7 +1,8 @@
 package cn.yiyang.book.controller;
 
 import cn.yiyang.system.config.wx.config.WxCpConfiguration;
-import cn.yiyang.system.config.wx.utils.WxCpServiceUtils;
+import cn.yiyang.system.config.wx.config.WxCpProperties;
+import com.google.common.collect.Lists;
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.cp.api.WxCpService;
 import me.chanjar.weixin.cp.bean.WxCpMessage;
@@ -11,9 +12,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author Binary Wang(https://github.com/binarywang)
@@ -22,9 +29,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("")
 public class WxPortalController {
   private final Logger logger = LoggerFactory.getLogger(this.getClass());
-
-  @Autowired
-  private WxCpServiceUtils wxCpServiceUtils;
 
 //  @GetMapping(produces = "text/plain;charset=utf-8")
 //  public String authGet(@PathVariable Integer agentId,
@@ -86,14 +90,22 @@ public class WxPortalController {
 
   @GetMapping("/test")
   public void test() throws WxErrorException {
-      WxCpService wxCpService = wxCpServiceUtils.getWxCpService();
       NewArticle article1 = new NewArticle();
       article1.setUrl("http://www.baidu.com");
       article1.setPicUrl("http://img.zcool.cn/community/0125fd5770dfa50000018c1b486f15.jpg@1280w_1l_2o_100sh.jpg");
       article1.setDescription("发货平台内容测试");
-      article1.setTitle("测试消息提示");
-      WxCpMessage message = WxCpMessage.NEWS().agentId(1000016).toUser("wangxiaoyu").addArticle(article1).build();
-      wxCpService.messageSend(message);
+      article1.setTitle("张宏亮发送测试");
+//      WxCpMessage message = WxCpMessage.NEWS().agentId(1000016).toUser("wangxiaoyu").addArticle(article1).build();
+      WxCpMessage message = WxCpMessage.TEXTCARD()
+              .agentId(1000016)
+              .toUser("kangjintao")
+              .title("领奖通知")
+              .description("<div class=\"gray\">2016年9月26日</div> <div class=\"normal\">恭喜你抽中iPhone 7一台，领奖码：xxxx</div><div class=\"highlight\">请于2016年10月10日前联系行政同事领取</div>")
+              .url("https://work.weixin.qq.com/api/doc#10167")
+              .build();
+
+      WxCpConfiguration.getCpServices().get(1000016).messageSend(message);
+
   }
 
 }
